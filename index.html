@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+		<title>NPM Help</title>
+	</head>
+
+	<main>
+
+		<p>Just trying to install an npm package so we can make use of the UploadCare API. The console in browser dev tools shows an error along the lines of:</p>
+		<p style="background: #eee;padding: 24px;font-family: monospace;max-width:360px;overflow:wrap;">Uncaught TypeError: Failed to resolve module specifier "@uploadcare/upload-client". Relative references must start with either "/", "./", or "../".</p>
+		<p><b>Note:</b> we've also tried:</p>
+		<pre>import { UploadClient } from './node_modules/@uploadcare/upload-client'</pre>
+		<p>That gives us a 403 forbidden error instead.</p>
+
+		<script type='module'>
+			import { UploadClient } from '@uploadcare/upload-client';
+			const client = new UploadClient({ publicKey: '1234567890' }) // public key is not real
+		</script>
+
+	</main>
+
+</html>

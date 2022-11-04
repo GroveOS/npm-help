@@ -1,0 +1,24 @@
+body {
+	font-family: Helvetica;
+	line-height: 1.6em;
+	color: #222;
+}
+
+h1, h2, h3 {
+	color: #111;
+}
+
+pre {
+	display: inline-block;
+	padding: 6px 12px;
+	background: #444;
+	color: white;
+	border-radius: 8px;
+	margin: 0;
+}
+
+span.monospace {
+	font-family: monospace;
+	font-weight: bold;
+	margin: auto 6px;
+}
